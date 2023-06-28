@@ -1,0 +1,54 @@
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - intel 
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - setuptools
+  - pytorch>=2.0
+  - torchvision
+  - torchaudio
+  - pytorch-cuda
+  - huggingface_hub>=0.15.1
+  - boto3
+  - funcy
+  - tokenizers
+  - tqdm
+  - transformers
+  - pathvalidate
+  - rich
+  - nltk
+  - blas-devel 
+  - libcblas   
+  - liblapack  
+  - liblapacke 
+  - mkl        
+  - mkl-devel  
+  - mkl-include
+  - mkl-service
+  - mkl_fft    
+  - mkl_random
+  - intel-openmp 
+  - blas=*=*mkl
+  - libblas=*=*mkl
+  - numpy
+  - scipy
+  - pydub
+  - pywin32 # windows
+  # - fairseq
+  # sox is for linux, soundfile is for windows
+  - chardet
+  - ffmpeg-python
+  - av
+  - hydra-core>=1.1
+  - einops
+  - num2words
+  - sentencepiece
+  - spacy==3.5.2
+  - librosa
+  - python-devtools
+  - pytorch-lightning
+  - pysoundfile==0.12.1

@@ -1,0 +1,74 @@
+Thank you for downloading https://github.com/JonathanFly/bark
+
+# Installation
+
+Run:
+    INSTALL_BARK_INFINITY.bat
+
+(After Install, close terminal window)
+
+Start:
+  START_BARK_INFINITY.bat
+
+
+To launch the CLI:
+  COMMAND_LINE_BARK_INFINITY.bat
+
+To troubleshoot the Bark Setup Environment.
+  TROUBLESHOOT_BARK_INFINITY.bat
+
+# Updating the web UI
+
+Run the "INSTALL_BARK_INFINITY.bat" and it may update. But you may have 
+
+1. Run "TROUBLESHOOT_BARK_INFINITY.bat"
+2. Type "cd bark"
+3. Type "git pull"
+
+# Adding flags like --chat, --notebook, etc
+
+Edit the "START_BARK_INFINITY.bat" script using a text editor and add the desired flags
+to the CMD_FLAGS variable at the top. It should look like this:
+
+"""
+# Gradio flags
+
+--share               Enable share setting.
+--user USER           User for authentication.
+--password PASSWORD   Password for authentication.
+--listen              Server name setting.
+--server_port SERVER_PORT
+--no-autolaunch       Disable automatic opening of the app in browser.
+--debug               Enable detailed error messages and extra outputs.
+--incolab             Default for Colab.
+"""
+
+
+If you start TROUBLESHOOT_BARK_INFINITY.bat, useful commands:
+
+-
+-----START BARK MANUALLY------
+Type 'cd bark' to enter the bark directory.
+Type 'python bark_perform.py' to run the CLI.
+Type 'python bark_webui.py' to run the GUI.
+-
+-----Manual Updates------
+
+
+Type 'conda update -y -n base conda' to update conda.
+Type 'conda update -y --all --solver=libmamba' to update all packages.
+Type 'conda clean --all' to free up disk space from unused versions.
+type 'ffdl install -U --add-path' to try to reinstall ffmpeg if you have issues with it.
+type 'pip install -r requirements-allpip.txt' to try to manually install pip requirements.
+
+Type 'conda env update -y -f environment-cuda-installer.yml --prune --solver=libmamba' to update your env manually, if the .yml changed. (Only for conda install)
+Type 'cd bark' to enter the bark directory and then 'git pull' to update the repo code. This may or not work with the installer..
+-
+-----Still Not Working?------
+Go ahead and @ me on the Bark Official Discord, username "Jonathan Fly" jonathanfly. 
+My Discord is always silent, don't worry about waking me up or anything, any time is fine.
+
+-
+-----How do I get out of here? ------
+Type 'conda deactivate' to exit this environment and go back to normal terminal.
+-

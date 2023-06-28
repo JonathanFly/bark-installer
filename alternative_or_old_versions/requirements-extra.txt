@@ -1,0 +1,10 @@
+fairseq @ https://github.com/Sharrnah/fairseq/releases/download/v0.12.4/fairseq-0.12.4-cp310-cp310-win_amd64.whl
+demucs
+flashy>=0.0.1
+hydra_colorlog
+julius
+encodec
+rich-argparse
+gradio>=3.35.2
+universal-startfile
+audiolm_pytorch==1.1.4
