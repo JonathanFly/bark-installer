@@ -73,7 +73,7 @@ def install_dependencies(dry_run):
 
     base_commands = [
         (f'"{conda_path}"' + " update -y -k -n base conda", True),
-        (f'"{conda_path}"' + " install -n -k base -y conda-libmamba-solver", True),
+        (f'"{conda_path}"' + " install -k -n base -y conda-libmamba-solver", True),
         (f'"{conda_path}"' + " install -y -k pip git --solver=libmamba", True),
         (f'"{conda_path}"' + " update -y -k --all --solver=libmamba", True),
         ("pip install --no-input ffmpeg-downloader", True),
