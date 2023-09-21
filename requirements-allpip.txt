@@ -20,7 +20,7 @@ av
 bitarray
 cython
 sacrebleu
-beartype
+beartype>=0.16.1
 ema-pytorch
 lion-pytorch
 local-attention
