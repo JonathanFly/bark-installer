@@ -72,10 +72,10 @@ def install_dependencies(dry_run):
     conda_path = get_conda_path()
 
     base_commands = [
-        (f'"{conda_path}"' + " update -y -n base conda", True),
-        (f'"{conda_path}"' + " install -n base -y conda-libmamba-solver", True),
+        (f'"{conda_path}"' + " update -y -k -n base conda", True),
+        (f'"{conda_path}"' + " install -n -k base -y conda-libmamba-solver", True),
         (f'"{conda_path}"' + " install -y -k pip git --solver=libmamba", True),
-        (f'"{conda_path}"' + " update -y --all --solver=libmamba", True),
+        (f'"{conda_path}"' + " update -y -k --all --solver=libmamba", True),
         ("pip install --no-input ffmpeg-downloader", True),
         ("ffdl install -U --add-path 6.0@full", True),
         ("pip install soundfile", True),
