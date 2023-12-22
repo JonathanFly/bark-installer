@@ -40,7 +40,7 @@ universal-startfile
 hydra_colorlog
 julius
 soundfile==0.12.1
-gradio>=3.35.2
+gradio==3.48.0
 ffmpeg_downloader
 rich_argparse
 devtools
