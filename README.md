@@ -7,5 +7,6 @@ Or Download the zip file https://github.com/JonathanFly/bark-installer/releases
 
 Install Instructions [https://github.com/JonathanFly/bark](https://github.com/JonathanFly/bark)
 
+This installer is windows install. A few notes on doing it manually or in linux https://github.com/JonathanFly/bark/blob/main/linux_notes.md
 
 
