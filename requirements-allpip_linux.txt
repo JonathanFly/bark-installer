@@ -27,7 +27,6 @@ local-attention
 hydra-core>=1.1
 einops
 scipy
-pywin32
 ffmpeg-python
 sentencepiece
 spacy==3.5.2
@@ -38,7 +37,7 @@ platformdirs
 universal-startfile
 hydra_colorlog
 julius
-soundfile==0.12.1
+sox
 gradio==3.48.0
 ffmpeg_downloader
 rich_argparse
